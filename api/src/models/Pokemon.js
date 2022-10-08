@@ -36,7 +36,7 @@ module.exports = (sequelize) => {
     sprite: {
       type: DataTypes.STRING,
     },
-    createInDb: {
+    createdInDb: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: true,
