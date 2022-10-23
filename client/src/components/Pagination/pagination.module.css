@@ -1,0 +1,11 @@
+.paginate {
+    display: flex;
+    justify-content: space-around;
+    width: 8rem;
+    background-color: transparent;
+}
+
+.butt {
+    width: 1rem;
+    cursor: pointer;
+}

@@ -40,22 +40,21 @@
     gap: 0.75rem;
     padding: 0.5rem 0.75rem;
     width: 100%;
-  }
+}
   
-  .pokemon_name {
+.pokemon_name {
     text-decoration: none;
     text-transform: capitalize;
+}
   
-  }
-  
-  .pokemon_types {
+.pokemon_types {
     text-decoration: none;
     text-transform: capitalize;
     display: flex;
     gap: 0.5rem;
-  }
+}
   
-  .pokemon_footerCard {
+.pokemon_footerCard {
     background-color: rgb(165, 113, 16);
     color: beige;
     display: flex;
@@ -64,4 +63,4 @@
     gap: 12px;
     padding: 8px 12px;
     border-radius: 10px;
-  }
+}

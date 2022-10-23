@@ -87,7 +87,7 @@ export function getPokemonDetail(id) {
     }
 };
 
-export function getPokeName(name) {
+export function getPokemonName(name) {
     return async function(dispatch) {
         try {
             const pokeName = await axios.get(`http://localhost:3001/pokemons?name=${name}`);
@@ -102,7 +102,7 @@ export function getPokeName(name) {
     }
 };
 
-export function getClonePoke(name) {
+export function getClonePokemon(name) {
     return async function () {
         const pokeName = await axios.get(`http://localhost:3001/pokemons?name=${name}`);
         if (!pokeName) {
