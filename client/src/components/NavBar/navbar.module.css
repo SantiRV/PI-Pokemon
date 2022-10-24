@@ -1,5 +1,5 @@
 .contNav {
-    background-color: rgb(165, 113, 16);
+    background-color: white;
     width: 100vw;
     height: 5rem;
     justify-content: center;
@@ -16,7 +16,7 @@
   }
 
 .items {
-    width: 100vw;
+    width: 150vw;
     justify-content: center;
     align-items: center;
     display: flex;

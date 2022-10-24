@@ -28,7 +28,7 @@
     z-index: 10;
 }
   
-.butt {
+.btn {
     height: 70%;
     width: 50%;
     background-color: rgba(245, 245, 220, 0.507);
@@ -42,7 +42,7 @@
     z-index: 10;
 }
   
-.butt:hover {
+.btn:hover {
     cursor: pointer;
     background-color:  rgba(212, 175, 11, 0.719);
     color: rgba(0, 0, 0, 0.658);
@@ -57,7 +57,7 @@
 }
   
 .card {
-    display: flex;
+   display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { getPokemon } from '../../actions/index';
 import SearchBar from '../SearchBar/SearchBar';
 import styles from './navbar.module.css';
-import image from '../../assets/pokemonlogo.png';
+import image from '../../assets/pokeimagen.png';
 
 const NavBar = ({ search, typesFilter, attackFilter, orderFilter, createdFilter }) => {
     const dispatch = useDispatch();

@@ -121,6 +121,7 @@ export default function PokemonCreate() {
         <div className={styles.cont}>
             <h1 className={styles.h1}>Create your own Pokemon</h1>
             <form className={styles.form} onSubmit={(e) => handleSubmit(e)}>
+                
                 <div className={styles.inputCont}>
                     <label htmlFor='name'>Name: </label>
                     <input 
@@ -186,7 +187,7 @@ export default function PokemonCreate() {
                 </div>
 
                 <div className={styles.inputCont}>
-                    <label htmlFor='speed'>Speed: </label>
+                    <label>Speed: </label>
                     <input 
                         className={styles.input}
                         type='number'
@@ -205,12 +206,84 @@ export default function PokemonCreate() {
                     <label>Height: </label>
                     <input 
                         className={styles.input}
-                        
+                        type='number'
+                        value={input.height}
+                        name='height'
+                        id='height'
+                        onChange={(e) => handleChange(e)}
+                        required
+                    />
+                    {errors.height && (
+                        <p>{errors.height}</p>
+                    )}
                 </div>
+
+                <div className={styles.inputCont}>
+                    <label>Weight: </label>
+                    <input
+                        className={styles.input}
+                        type='number'
+                        value={input.weight}
+                        name='weight'
+                        id='weight'
+                        onChange={(e) => handleChange(e)}
+                        required
+                    />
+                    {errors.weight && (
+                        <p>{errors.weight}</p>
+                    )}
+                </div>
+
+                <div className={styles.inputCont}>
+                <label>Image (url): </label>
+                    <input
+                        className={styles.input}
+                        type="url"
+                        value={input.sprite}
+                        name="sprite"
+                        id="sprite"
+                        onChange={(e) => handleChange(e)}
+                        placeholder={("https://...")}
+                        required
+                    />
+                </div>
+
+                <div className={styles.inputCont}>
+                    <label>Type: </label>
+                    <select
+                        onChange={(e) => handleSelect(e)}
+                        className={styles.input}
+                        name='types'
+                        id="types"
+                        required
+                        >
+                        {
+                            tipos?.map((e, index) => {
+                                return (
+                                <option value={e.name} key={e.id}>{e}</option>)
+                            })
+                        }
+                    </select>
+                </div>
+                
+                <div className={styles.deleteType}>
+                    {input.types.map(e =>
+                        <div className={styles.type}>
+                            <p className={styles.Ptype}>{e}</p>
+                            <button
+                                className={styles.btn}
+                                onClick={() => handleDelete(e)}
+                                value='x'>x</button>
+                        </div>
+                    )}
+                </div>
+
+                <div className={styles.footer}>
+                    <button className={styles.btn} onClick={() => history.push("/pokemons")}>Volver</button>
+                    <button className={styles.btn} type='submit'> Crete</button>
+                </div>
+
             </form>
         </div>
     )
-    
-    
-    
-}
+};

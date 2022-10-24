@@ -85,7 +85,7 @@ export default function Home() {
                 </button>
                 <Link to='/pokemon'>
                     <button className={styles.btn}>
-                        Crate
+                        Create
                     </button>
                 </Link>
             </div>
@@ -94,7 +94,7 @@ export default function Home() {
                 {currentPokemon.length ? currentPokemon?.map((e, index) => {
                     return (
                         <div key={index} className={styles.pokemon}>
-                            <Link className={styles.link} to={'/details' + e.id }>
+                            <Link className={styles.link} to={'/details/' + e.id }>
                                 <Card
                                     name={e.name}
                                     types={e.types.map(el => el.name + (' '))}
@@ -113,7 +113,7 @@ export default function Home() {
                 <Pagination
                     pokemonPerPage={pokemonPerPage}
                     allPokemon={allPokemon.length}
-                    paging={paging}
+                    pagination={paging}
                 />
             </div>
         </div>
