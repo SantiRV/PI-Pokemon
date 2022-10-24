@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { createPokemon, getPokemonTypes } from '../../actions/index';
 import styles from './styles.module.css';
+import { SiPokemon } from 'react-icons/si'
 
 export default function PokemonCreate() {
     const dispatch = useDispatch();
@@ -119,7 +120,8 @@ export default function PokemonCreate() {
 
     return (
         <div className={styles.cont}>
-            <h1 className={styles.h1}>Create your own Pokemon</h1>
+            <h3 className={styles.h3}>Create your own </h3>
+            <h1 className={styles.h1}> <SiPokemon size={150} /> </h1> 
             <form className={styles.form} onSubmit={(e) => handleSubmit(e)}>
                 
                 <div className={styles.inputCont}>
@@ -279,8 +281,8 @@ export default function PokemonCreate() {
                 </div>
 
                 <div className={styles.footer}>
-                    <button className={styles.btn} onClick={() => history.push("/pokemons")}>Volver</button>
-                    <button className={styles.btn} type='submit'> Crete</button>
+                    <button className={styles.btn} onClick={() => history.push("/pokemons")}>Back</button>
+                    <button className={styles.btn} type='submit'> Create</button>
                 </div>
 
             </form>

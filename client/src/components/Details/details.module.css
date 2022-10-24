@@ -1,7 +1,7 @@
 .container {
     height: 100vh;
     width: 100vw;
-    background-color:  rgba(212, 175, 11, 0.719);
+    background-color:  rgb(190, 30, 19);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
   
 .btn:hover {
     cursor: pointer;
-    background-color:  rgba(212, 175, 11, 0.719);
+    background-color:  rgb(70, 70, 243);
     color: rgba(0, 0, 0, 0.658);
     border: 1px solid #f3f1ed;
     border-radius: 20px;

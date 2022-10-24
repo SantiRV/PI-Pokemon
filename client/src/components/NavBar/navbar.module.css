@@ -9,10 +9,10 @@
 
 .img {
     display: inline-block;
-    width: 256px;
-    height: 94px;
+    width: 160px;
+    height: 60px;
     margin-left: 50px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
 .items {

@@ -1,5 +1,5 @@
 .body {
-    background-color: burlywood;
+    background-color: rgb(70, 70, 243);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,16 +34,19 @@
   
 .btn {
     height: 2.4rem;
-    width: 5rem;
+    width: 10rem;
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-size: .8rem;
     background-color: rgba(245, 245, 220, 0.507);
     border:  1px solid #fcd5d099;
     color: rgba(0, 0, 0, 0.658);
-    border-radius: 3rem;
+    border-radius: 1rem;
     cursor: pointer;
     margin-top: 10px;
+    justify-content: space-around;
+    margin-right: 10px;
+    margin-left: 10px;
 }
   
 .navContainer {

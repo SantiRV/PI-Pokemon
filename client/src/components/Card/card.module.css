@@ -3,7 +3,7 @@
     color: rgba(0, 0, 0, 0.55);
     width: 100%;
     background-color: rgba(245, 245, 220, 0.507);
-    border-radius: 10%;
+    border-radius: 20%;
     border-style: inherit;
 }
 
@@ -55,12 +55,12 @@
 }
   
 .pokemon_footerCard {
-    background-color: rgb(205, 219, 12);
+    background-color: rgb(190, 30, 19);
     color: beige;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 12px;
     padding: 8px 12px;
-    border-radius: 10px;
+    border-radius: 50px;
 }
