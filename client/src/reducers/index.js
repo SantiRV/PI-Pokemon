@@ -30,7 +30,7 @@ function rootReducer(state = initialState, action) {
             }
         case 'CREATED_DB':
             const pokemonAll = state.allPokemons;
-            const cratedInDb = action.payload === 'creados' ?
+            const cratedInDb = action.payload === 'creados' ? 
             pokemonAll.filter(pokemon => pokemon.cratedInDb) :
             pokemonAll.filter(pokemon => !pokemon.cratedInDb)
             console.log('Creados en DB', cratedInDb.length);

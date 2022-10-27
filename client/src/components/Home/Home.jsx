@@ -36,7 +36,7 @@ export default function Home() {
 
     function handleClick(e) {
         e.preventDefault();
-        dispatch(getPokemon)
+        dispatch(getPokemon())
     };
 
     function handleTypes(e) {
@@ -76,7 +76,7 @@ export default function Home() {
                 typesFilter={handleTypes}
                 attackFilter={handleFilterAttack}
                 orderFilter={handleFilterAlphabetical}
-                cratedFilter={handleFilterCreatedInDb}
+                createdFilter={handleFilterCreatedInDb}
             />
             
             <div className={styles.navContainer}>
